@@ -1,8 +1,8 @@
-import * as React from "react";
+import React from "react";
 
 const RootPage: React.FC = () => {
     return (
-        <div className="container">
+        <div>
             <h1>Разработать таблицу отображающую курсы валют</h1>
             <p>Используя сервис ЦБ РФ <a href="https://www.cbr-xml-daily.ru/daily_json.js" target="_blank">https://www.cbr-xml-daily.ru/daily_json.js</a> вывести таблицу курсов валют:</p>
             <ul>
