@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./RootPage.module.less";
 
 const RootPage: React.FC = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <h1>Разработать таблицу отображающую курсы валют</h1>
             <p>Используя сервис ЦБ РФ <a href="https://www.cbr-xml-daily.ru/daily_json.js" target="_blank">https://www.cbr-xml-daily.ru/daily_json.js</a> вывести таблицу курсов валют:</p>
             <ul>
