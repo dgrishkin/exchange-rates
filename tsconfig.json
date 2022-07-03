@@ -1,26 +1,27 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "jsx": "react",
     "target": "es6",
-    "baseUrl": "./src",
-    "esModuleInterop": true,
-    "paths": {
-      "@/*": ["./*"]
-    },
-    "experimentalDecorators": true,
+    "module": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "strictFunctionTypes": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "importHelpers": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "$*": ["*"],
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
   },
   "include": [
-    "src/**/*",
-    "globalCss.d.ts",
-    "styles.d.ts",
+    "src",
   ],
   "exclude": [
     "node_modules",

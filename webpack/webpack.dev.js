@@ -23,14 +23,12 @@ module.exports = merge(common, {
     devtool: 'eval-source-map',
 
     devServer: {
-        //contentBase: path.join(__dirname, "../dist/"),
         port: 3000,
-        //publicPath: "/",
         hot: true,
         historyApiFallback: true,
+        open: "/"
     },
     plugins: [
         ...commonPlugins,
-        new webpack.HotModuleReplacementPlugin(),
     ]
 });

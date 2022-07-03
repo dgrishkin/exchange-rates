@@ -1,5 +1,5 @@
-
 const path = require("path");
+const { createWebpackAlias } = require("./utils");
 
 module.exports = {
     entry: path.resolve(__dirname, '../src/index.tsx'),
@@ -36,16 +36,7 @@ module.exports = {
             }
         ]
     },
-    resolve: {
-        extensions: ['.js', '.ts', '.tsx', '.css', '.png'],
-        modules: [
-            path.resolve(__dirname, 'node_modules'),
-            'node_modules'
-        ],
-        alias: {
-            "@": path.resolve(__dirname, '../src')
-        }
-    },
+    resolve: createWebpackAlias(),
     resolveLoader: {
         modules: [
             path.resolve(__dirname, 'node_modules'),
