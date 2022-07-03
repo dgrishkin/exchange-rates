@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import RootPage from "./pages/root-page";
+import { RootPage } from "$pages";
 import store from "./store"
 
 ReactDOM.render(

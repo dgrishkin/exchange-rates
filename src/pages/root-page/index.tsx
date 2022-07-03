@@ -1,7 +1,7 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./RootPage.module.less";
 
-const RootPage: React.FC = () => {
+export const RootPage: FC = () => {
     return (
         <div className={styles.container}>
             <h1>Разработать таблицу отображающую курсы валют</h1>
@@ -15,5 +15,3 @@ const RootPage: React.FC = () => {
         </div>
     );
 }
-
-export default RootPage;
