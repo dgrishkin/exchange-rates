@@ -1,31 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "ES2020",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "preserveConstEnums": true,
-    "strictFunctionTypes": false,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "importHelpers": true,
-    "sourceMap": true,
-    "baseUrl": "./src",
-    "noImplicitAny": true,
-    "paths": {
-      "$*": ["*"],
-    },
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+      "target": "ESNext",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "module": "ESNext",
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "importHelpers": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "jsx": "react-jsx",
+      "strict": true,
+      "preserveConstEnums": true,
+      "strictFunctionTypes": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "baseUrl": "src",
+      "paths": {
+          "$*": ["*"],
+      },
+      "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": [
-    "src",
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/**", "**/__mocks__/**"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
