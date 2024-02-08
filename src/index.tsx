@@ -1,7 +1,4 @@
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { RootPage } from "$pages";
 
-ReactDOM.render(
-    <RootPage />,
-    document.getElementById("root")
-)
+createRoot(document.getElementById('root')!).render(<RootPage />);
